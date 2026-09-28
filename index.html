@@ -6,7 +6,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+		<style>
+		/* Mobile responsiveness */
+		@media screen and (max-width: 736px) {
+			.exp-grid { grid-template-columns: 1fr !important; gap: 1.5em !important; }
+			.skills-grid { grid-template-columns: 1fr !important; }
+			.vm-wrap { width: 100% !important; }
+			#seven .vm-slide img { height: 56vw !important; min-height: 200px; }
+			#eight #ui-carousel { width: 100% !important; }
+			#eight .ui-slide img { height: auto !important; max-height: 56vw; }
+			.ui-overlay { display: none !important; }
+			.fs-item { width: 100px !important; height: 100px !important; }
+			.fs-item.active { width: 200px !important; height: 200px !important; }
+		}
+		@media screen and (max-width: 480px) {
+			#seven .vm-slide img { height: 70vw !important; }
+			#eight .ui-slide img { max-height: 70vw !important; }
+			.fs-item { width: 72px !important; height: 72px !important; }
+			.fs-item.active { width: 160px !important; height: 160px !important; }
+		}
+	</style></head>
 	<body class="is-preload">
 
 		<!-- Header -->
@@ -72,7 +91,7 @@
 					<!-- Experience strip -->
 					<div style="margin-top:3.5em;padding-top:2em;border-top:1px solid rgba(66,65,63,0.12);">
 						<p style="font-size:0.7em;letter-spacing:0.2em;text-transform:uppercase;opacity:0.45;margin-bottom:1.5em;"><strong>Experience</strong></p>
-						<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2em;">
+						<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2em;" class="exp-grid">
 
 							<div>
 								<p style="font-size:0.72em;opacity:0.5;margin:0 0 0.4em;letter-spacing:0.06em;">2019 &ndash; Present</p>
@@ -106,7 +125,7 @@
 					</header>
 
 					<!-- Tool cards grid -->
-					<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5em;margin-bottom:2.5em;">
+					<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5em;margin-bottom:2.5em;" class="skills-grid">
 
 						<div style="border:1px solid rgba(255,255,255,0.15);border-radius:0.5em;padding:1.5em;">
 							<p style="margin-bottom:0.6em;font-size:0.75em;letter-spacing:0.15em;text-transform:uppercase;opacity:0.6;">Vector &amp; Layout</p>
@@ -285,17 +304,17 @@
 
 						<div class="ui-slide" style="position:relative;display:block;opacity:1;transition:opacity 0.8s ease;">
 							<img src="images/image_34.jpeg" style="width:100%;display:block;object-fit:contain;" />
-							<div style="position:absolute;top:1em;right:1em;color:#000000;text-align:justify;font-size:0.85em;line-height:1.2em;max-width:50%;"><strong>Dashboard UI | Sarawak</strong><br />Digital workflow for car technicians - replaced manual paperwork with real-time data capture.</div>
+							<div style="position:absolute;top:1em;right:1em;color:#000000;text-align:justify;font-size:0.85em;line-height:1.2em;max-width:50%;" class="ui-overlay"><strong>Dashboard UI | Sarawak</strong><br />Digital workflow for car technicians - replaced manual paperwork with real-time data capture.</div>
 						</div>
 
 						<div class="ui-slide" style="position:relative;display:none;opacity:0;transition:opacity 0.8s ease;">
 							<img src="images/image_36.jpeg" style="width:100%;display:block;object-fit:contain;" />
-							<div style="position:absolute;top:1em;right:1em;color:#000000;text-align:justify;font-size:0.85em;line-height:1.2em;max-width:50%;"><strong>Dashboard UI | Genting</strong><br />Real-time monitoring dashboard for fleet management - tracking tractor location, fuel levels, TPMS, and maintenance schedules in one view.</div>
+							<div style="position:absolute;top:1em;right:1em;color:#000000;text-align:justify;font-size:0.85em;line-height:1.2em;max-width:50%;" class="ui-overlay"><strong>Dashboard UI | Genting</strong><br />Real-time monitoring dashboard for fleet management - tracking tractor location, fuel levels, TPMS, and maintenance schedules in one view.</div>
 						</div>
 
 						<div class="ui-slide" style="position:relative;display:none;opacity:0;transition:opacity 0.8s ease;">
 							<img src="images/image_38.jpeg" style="width:100%;display:block;object-fit:contain;" />
-							<div style="position:absolute;top:1em;right:1em;color:#000000;text-align:justify;font-size:0.85em;line-height:1.2em;max-width:50%;"><strong>Dashboard UI | United Arab Emirates</strong><br />Centralized platform for assigning maintenance tasks, scheduling upkeep, and managing vendor-submitted ad-hoc requests - all in one workflow.</div>
+							<div style="position:absolute;top:1em;right:1em;color:#000000;text-align:justify;font-size:0.85em;line-height:1.2em;max-width:50%;" class="ui-overlay"><strong>Dashboard UI | United Arab Emirates</strong><br />Centralized platform for assigning maintenance tasks, scheduling upkeep, and managing vendor-submitted ad-hoc requests - all in one workflow.</div>
 						</div>
 
 
@@ -423,15 +442,6 @@
 				})();
 			</script>
 <!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Eri — Designer & Creative</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
 		<!-- Four: Contact CTA -->
 			<section id="four" class="main style2 special">
